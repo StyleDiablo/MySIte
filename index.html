@@ -6,106 +6,12 @@
   <title>Alex's Site</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #630c69;
-    }
+  <link rel="stylesheet" href="styles.css">
 
-    header {
-      text-align: center;
-      background-color: rgba(71, 190, 39, 0.82);
-      color: #000000;
-      padding: 20px;
-    }
-
-    h1 {
-      margin: 0;
-    }
-
-    .contact-info {
-      margin-top: 10px;
-    }
-    .menu {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100px;
-    }
-
-    .menu ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-    }
-
-    .menu li {
-      margin: 0 100px;
-    }
-
-    .menu a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      font-size: 16px;
-    }
-
-    .resume-section {
-      border: 1px solid rgba(71, 190, 39, 0.82);
-      background-color: rgba(71, 190, 39, 0.82);
-      margin: 0;
-      display: flex;
-      flex-wrap: wrap;
-      padding: 20px;
-    }
-
-    .section-header {
-      font-weight: bold;
-      margin-bottom: 10px;
-      color: #333;
-      font-size: 24px;
-    }
-
-    .resume-section p {
-      color: rgb(0, 0, 0);
-      font-size: 16px;
-    }
-
-    .image-container {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-    }
-
-    .image {
-      max-width: 50%;
-      margin: 0;
-    }
-
-    .summary-container {
-      flex: 1;
-      margin-left: 20px;
-    }
-
-    .pdf-button {
-      background-color: #0074D9;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      width: 90%;
-    }
-    .github-link {
-      float: right;
-      width: 100%;
-    }
-  </style>
 </head>
 <body>
 <nav class="menu">
+  <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
@@ -114,18 +20,17 @@
 <header>
   <h1>Alexandros Papathanasiou</h1>
   <p class="contact-info">
-    Email: <a href="mailto:your@email.com">cs03308@uoi.gr</a><br>
+    Email: <a href="mailto:cs03308@uoi.gr">cs03308@uoi.gr</a><br>
     Address: Litochoro, Pieria, Greece
   </p>
 </header>
 
-<div class="resume-section">
-  <h2 class="section-header"></h2>
+<div class="content-container">
   <div class="image-container">
-    <img class="image" src="https://i.ibb.co/MBRP9Zp/359469702-1644348686069957-4829920607560496678-n.jpg"   alt="Image 2">
+    <img class="image" src="https://i.ibb.co/MBRP9Zp/359469702-1644348686069957-4829920607560496678-n.jpg" alt="Image 2">
   </div>
+  <h2 class="section-header">A Few Words About Me</h2>
   <div class="summary-container">
-    <h3 class="summary-header">A Few Words About Me</h3>
     <p>
       Welcome to my corner of the digital world! I'm a passionate computer science student on a journey to explore the limitless possibilities of technology. With a curious mind and a love for problem-solving, I'm constantly diving into the intricacies of software development, algorithms, and cutting-edge technologies.
       My goal is to not only excel in my studies but also contribute to the ever-evolving tech landscape. I believe that through collaboration, innovation, and continuous learning, we can shape the future of computing.
@@ -134,17 +39,19 @@
     </p>
   </div>
 </div>
+</div>
 
 <div class="resume-section">
   <h2 class="section-header">Resume</h2>
-  <button class="pdf-button" onclick="openPDF()"><i class="fas fa-file-pdf "></i></button>
-  <p><a href="https://github.com/StyleDiablo" class="github-link"><i class="fab fa-github"></i> Check Out My Work In GitHub</a></p>
+  <button class="pdf-button" onclick="openPDF()"><i class="fas fa-file-pdf"></i> View Resume (PDF)</button>
+  <div class="github-link">
+    <a href="https://github.com/StyleDiablo" target="_blank"><i class="fab fa-github"></i> Check Out My Work on GitHub</a>
+  </div>
 </div>
-
 
 <script>
   function openPDF() {
-    window.open('https://drive.google.com/file/d/1GYpZBefrW561dy4MkfJO5Pp7nqp9esAg/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1c4IDsTVTnsqWbjSH65GAgcpwYYWAuznQ/view?usp=sharing', '_blank');
   }
 </script>
 </body>
